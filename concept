@@ -1,0 +1,17 @@
+#Convertendo strings para datetime
+
+data_string = '01/06/2022'
+
+#Link para a lista de format codes
+https://docs.python.org/3/library/datetime.html#format-codes
+  
+data_datetime = datetime.datetime.strptime(data_string, "%d/%m/%Y")
+type(data_datetime)
+datetime.datetime
+print(data_datetime)
+2022-06-01 00:00:00
+
+data_string = '01-06-2022'
+data_datetime = datetime.datetime.strptime(data_string, "%d-%m-%Y")
+print(data_datetime)
+2022-06-01 00:00:00
